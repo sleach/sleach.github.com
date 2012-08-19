@@ -14,7 +14,7 @@ Long story short – absolutely.  Of the 163 external resources on the main page
 
 ## More detail
 
-I used the following methodology to come up with the numbers.  My first step was to use the always-awesome Webpagetest.org to get a dump of all of the external resources – i.e. Javascript, CSS etc. (you can see my report here – to get the external resources you can click on “Raw object data” to get a CSV of each object).  From that CSV, I just wrote a quick python script that would use Dnspython on each external hostname, do a lookup, and see if the CNAME pointed to Cloudfront, Akamai, or something else.
+I used the following methodology to come up with the numbers.  My first step was to use the always-awesome [Webpagetest](http://webpagetest.org) to get a dump of all of the external resources – i.e. Javascript, CSS etc. (you can see my report here – to get the external resources you can click on “Raw object data” to get a CSV of each object).  From that CSV, I just wrote a quick python script that would use [Dnspython](http://dnspython.org) on each external hostname, do a lookup, and see if the CNAME pointed to Cloudfront, Akamai, or something else.
 
 Below is a dump of all of the URL’s, sorted by count with their hosting CDN.
 
