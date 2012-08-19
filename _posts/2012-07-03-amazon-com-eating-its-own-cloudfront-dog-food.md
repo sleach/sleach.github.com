@@ -8,7 +8,7 @@ title: Amazon.com eating it’s own (Cloudfront) dog food
 
 <p class="meta">03 July 2012 - Colorado</p>
 
-I was curious, given the amazing rate Amazon has been improving "Cloudfront":http://aws.amazon.com/cloudfront/, if they had decided to eat their own dog food yet and use it as the primary CDN on their crown jewel – the main Amazon.com site.  They had previously entrusted Akamai for the majority of their CDN needs.
+I was curious, given the amazing rate Amazon has been improving [Cloudfront](http://aws.amazon.com/cloudfront/), if they had decided to eat their own dog food yet and use it as the primary CDN on their crown jewel – the main Amazon.com site.  They had previously entrusted Akamai for the majority of their CDN needs.
 
 Long story short – absolutely.  Of the 163 external resources on the main page, 74 of them are hosted on Cloudfront – compared to 46 on Akamai (the rest are a mixture of doubleclick, etc.).  That’s pretty impressive.
 
@@ -18,18 +18,16 @@ I used the following methodology to come up with the numbers.  My first step was
 
 Below is a dump of all of the URL’s, sorted by count with their hosting CDN.
 
-g-ecx.images-amazon.com, for example, is hosted on Cloudfront:
+*g-ecx.images-amazon.com*, for example, is hosted on Cloudfront:
 
-```
-;; ANSWER SECTION:
-g-ecx.images-amazon.com. 49 IN CNAME d1ge0kk1l5kms0.cloudfront.net.
-d1ge0kk1l5kms0.cloudfront.net. 14 IN CNAME d1ge0kk1l5kms0.iad12.cloudfront.net.
-while z-ecx.images-amazon.com is hosted on Akamai:
+    ;; ANSWER SECTION:
+    g-ecx.images-amazon.com. 49 IN CNAME d1ge0kk1l5kms0.cloudfront.net.
+    d1ge0kk1l5kms0.cloudfront.net. 14 IN CNAME d1ge0kk1l5kms0.iad12.cloudfront.net.
+    while z-ecx.images-amazon.com is hosted on Akamai:
 
-;; ANSWER SECTION:
-z-ecx.images-amazon.com. 60 IN CNAME z-ecx.images-amazon.com.edgesuite.net.
-z-ecx.images-amazon.com.edgesuite.net. 8725 IN CNAME a1248.g.akamai.net.
-```
+    ;; ANSWER SECTION:
+    z-ecx.images-amazon.com. 60 IN CNAME z-ecx.images-amazon.com.edgesuite.net.
+    z-ecx.images-amazon.com.edgesuite.net. 8725 IN CNAME a1248.g.akamai.net.
 
 Full breakdown.
 
