@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Amazon.com eating it’s own (Cloudfront) dog food
+permalink: /2012/07/03/amazon-com-eating-its-own-cloudfront-dog-food
 ---
 
 {{ page.title }}
