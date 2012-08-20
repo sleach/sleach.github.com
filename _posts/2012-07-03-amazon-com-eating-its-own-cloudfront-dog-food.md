@@ -23,7 +23,8 @@ Below is a dump of all of the URL’s, sorted by count with their hosting CDN.
     ;; ANSWER SECTION:
     g-ecx.images-amazon.com. 49 IN CNAME d1ge0kk1l5kms0.cloudfront.net.
     d1ge0kk1l5kms0.cloudfront.net. 14 IN CNAME d1ge0kk1l5kms0.iad12.cloudfront.net.
-    while z-ecx.images-amazon.com is hosted on Akamai:
+
+while z-ecx.images-amazon.com is hosted on Akamai:
 
     ;; ANSWER SECTION:
     z-ecx.images-amazon.com. 60 IN CNAME z-ecx.images-amazon.com.edgesuite.net.
