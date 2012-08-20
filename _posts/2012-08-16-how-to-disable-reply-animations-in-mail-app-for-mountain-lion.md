@@ -1,6 +1,7 @@
 ---
 layout: post
 title: How to disable reply animations in Mail.app for Mountain Lion
+alias: /2012/08/16/how-to-disable-reply-animations-in-mail-app-for-mountain-lion/
 ---
 
 {{ page.title }}
